@@ -31,7 +31,7 @@ function cortarConvite() {
 function opcaoConvite(link, id, senha) {
     const select = document.getElementById('tipo_convite').value;
 
-    const ver = `5.9.3`
+    const ver = `5.10.1`
 
     const recom = `Recomendações adicionais:
 * Mantenha seu APP ZOOM sempre atualizado (versão atual: ${ver})
