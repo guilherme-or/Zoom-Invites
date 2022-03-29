@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Links Personalizados</title>
+    <link rel="shortcut icon" href="https://www.vectorlogo.zone/logos/zoomus/zoomus-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Gerador de convites para Reuniões Congregacionais</h1>
+
+        <section class="info">
+            <label for="tipo_convite">Selecione o tipo de convite a ser gerado:</label>
+            <select id="tipo_convite">
+                <option value="0" disabled selected>Selecione uma opção...</option>
+                <option value="1">Reunião Quarta-feira</option>
+                <option value="2">Reunião Domingo</option>
+                <option value="3">Campo Sábado (Manhã)</option>
+                <option value="4">Campo Sábado (Tarde)</option>
+                <option value="5">Campo Domingo</option>
+                <option value="6">JW Broadcasting</option>
+            </select>
+            <textarea id="colaConvite" placeholder="Cole o convite padrão aqui..." required></textarea>
+            <div class="btn"> 
+                <button id="botao_convite" onclick="gerarConvite()">Criar Convite</button>
+                <nav class="btn__nav">
+                    <a href="whatsapp://" id="wpp"><i class="fab fa-whatsapp"></i></a>
+                    <a id="copiar" onclick="copiar()"><i class="far fa-copy"></i></a>
+                </nav>
+            </div>
+        </section>
+        
+        <p id="check"></p>  
+    </main>
+
+    <script src="./js/convite.js"></script>
+    <script src="./js/copiar.js"></script>
+</body>
+
+</html>
